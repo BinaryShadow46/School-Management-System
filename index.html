@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#4f46e5">
+    <title>EduManage Pro | School Management System</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="img/icons/icon-192x192.png">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-graduation-cap"></i>
+                <span>EduManage Pro</span>
+            </div>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#features">Features</a>
+                <a href="#demo">Demo</a>
+                <a href="#admin" class="admin-btn">Admin Panel</a>
+            </div>
+            <button class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Complete School Management System</h1>
+            <p>Streamline your school operations with our all-in-one solution</p>
+            <button class="install-btn" id="installButton">
+                <i class="fas fa-download"></i> Install App
+            </button>
+            <button class="demo-btn" onclick="window.location.href='login.html'">
+                <i class="fas fa-rocket"></i> Launch Demo
+            </button>
+        </div>
+        <div class="hero-image">
+            <!-- Online image placeholder -->
+            <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                 alt="School Management System" 
+                 onerror="this.src='https://via.placeholder.com/600x400/4f46e5/ffffff?text=School+Management'">
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <h2>Key Features</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <i class="fas fa-users"></i>
+                <h3>Student Management</h3>
+                <p>Complete student records, attendance, and performance tracking</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-chalkboard-teacher"></i>
+                <h3>Teacher Portal</h3>
+                <p>Grade management, timetable, and communication tools</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-file-invoice-dollar"></i>
+                <h3>Finance Management</h3>
+                <p>Fee collection, expense tracking, and financial reports</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-chart-line"></i>
+                <h3>Analytics Dashboard</h3>
+                <p>Real-time insights and performance analytics</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PWA Features -->
+    <section class="pwa-features">
+        <h2>Progressive Web App Features</h2>
+        <div class="pwa-grid">
+            <div class="pwa-card">
+                <i class="fas fa-wifi"></i>
+                <h3>Offline Access</h3>
+                <p>Work without internet connection</p>
+            </div>
+            <div class="pwa-card">
+                <i class="fas fa-mobile-alt"></i>
+                <h3>Installable</h3>
+                <p>Install on home screen like native app</p>
+            </div>
+            <div class="pwa-card">
+                <i class="fas fa-bell"></i>
+                <h3>Push Notifications</h3>
+                <p>Instant alerts and updates</p>
+            </div>
+            <div class="pwa-card">
+                <i class="fas fa-sync"></i>
+                <h3>Auto Sync</h3>
+                <p>Sync data when online</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Section -->
+    <section class="demo-section" id="demo">
+        <h2>Live Demo</h2>
+        <div class="demo-container">
+            <div class="demo-card">
+                <h3><i class="fas fa-user-tie"></i> Admin Login</h3>
+                <p>Username: admin</p>
+                <p>Password: admin123</p>
+                <button onclick="window.location.href='admin.html'">Access Admin Panel</button>
+            </div>
+            <div class="demo-card">
+                <h3><i class="fas fa-user"></i> Teacher Login</h3>
+                <p>Username: teacher</p>
+                <p>Password: teacher123</p>
+                <button onclick="window.location.href='teacher.html'">Teacher Portal</button>
+            </div>
+            <div class="demo-card">
+                <h3><i class="fas fa-user-graduate"></i> Student Login</h3>
+                <p>Username: student</p>
+                <p>Password: student123</p>
+                <button onclick="window.location.href='student.html'">Student Portal</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 EduManage Pro. All rights reserved.</p>
+        <p class="pwa-status" id="pwaStatus">PWA: Checking compatibility...</p>
+    </footer>
+
+    <script src="js/app.js"></script>
+    <script src="js/service-worker.js"></script>
+</body>
+</html>
